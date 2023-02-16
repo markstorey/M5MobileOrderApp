@@ -1,0 +1,276 @@
+body {
+    margin: 0;
+    font-family: 'Smythe', cursive;
+    background-color: lightgray;
+}
+
+.container {
+    width: 600px;
+    margin: 0 auto;
+    color: #f5f5f5;
+}
+
+button:focus, input:focus {
+    outline: 2px solid #16DB99;
+    
+}
+
+/* Header */
+
+header {
+    background-image: url("images/burger-img.png");
+    padding: 25px 45px 40px;
+    line-height: 0px;
+    text-align: start;
+}
+
+header p {
+    color: #ffffff;
+}
+
+#diner-font {
+    font-size: 39px;
+}
+
+#burger-font {
+    font-size: 22px;
+}
+
+/* Main */
+
+.food-container {
+    display: flex;
+    width: 508px;
+    height: 140px;
+    padding: 45px 45px 45px;
+    background-color: #f5f5f5;
+    color: black;
+    align-items: center;
+    line-height: 10px;
+}
+
+.icon-container {
+    width: 70px;
+    padding-right: 50px;
+}
+
+.food-icon {
+    font-size: 70px;
+    padding-right: 30px;
+}
+
+.food-name {
+    font-size: 28px;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.food-ingredients {
+    font-size: 16px;
+}
+
+.food-price {
+    font-size: 24px;
+}
+
+.add-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1.5px solid #DEDEDE;
+    font-family: "Inter";
+    font-size: 25px;
+    font-weight: 200;
+    padding: 0;
+    margin-left: auto;
+}
+
+.outside-food-container {
+    background-color: #f5f5f5;
+}
+
+.bottom-food-container {
+    height: 417px;
+    padding: 1px;
+}
+
+hr {
+    width: 504px;
+    border: 1px solid #D2D2D2;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.order-container {
+    /* height: 417px; */
+    background-color: #f5f5f5;
+    margin-bottom: 50px;
+    color: black;
+}
+
+.order-title {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 28px;
+    padding: 45px 0 45px 0;
+}
+
+.food-order, .total-price {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    height: 50px;
+    align-items: center;
+}
+
+.food-order-name {
+    font-size: 28px;
+    padding-left: 45px;
+}
+
+.remove-btn {
+    border: none;
+    background-color: #f5f5f5;
+    font-size: 14px;
+    height: 20px;
+    color: #BBBBBB;
+    margin-right: auto;
+    border-radius: 4px;
+}
+
+.food-order-price {
+    color: black;
+    padding-right: 45px;
+}
+
+#total-sum {
+    margin-right: auto;
+}
+
+/* #bottom-container-margin {
+    margin: 0 0 45px 0;
+} */
+
+#order-hr {
+    width: 504px;
+    border: 1px solid #393333;
+    padding: 0;
+    margin: 15px auto 0;
+}
+
+.complete-order-btn {
+    width: 508px;
+    height: 60px;
+    color: white;
+    background-color: #16DB99;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    margin-top: 25px;
+    margin-left: 46px;
+    margin-right: 46px;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
+/* Modal */
+.modal-container {
+    display: none;
+}
+
+.modal-backdrop {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100vh;
+    background-color:rgba(0,0,0,0.5);
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    display: block;
+    background-color: #f5f5f5;
+    width: 524px;
+    height: 542px;
+    border-radius: 4px;
+}
+
+.modal-close-btn {
+    display: block;
+    margin: 8px 8px 8px auto;
+    border: 1px solid #757575;
+    color: #757575;
+    border-radius: 4px;
+    
+}
+
+.modal-text {
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+input {
+    display: block;
+    margin: 23px auto;
+    width: 450px;
+    height: 70px;
+    border-radius: 4px;
+    border: 2px solid #757575;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #757575;
+    font-size: 20px;
+    padding-left: 25px;
+}
+
+.pay-btn {
+    display: block;
+    margin: 40px auto 0;
+    border: none;
+    width: 484px;
+    height: 70px;
+    border-radius: 4px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    background-color: #16DB99
+}
+
+/* Thanks message */
+.thanks-box {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 504px;
+    height: 120px;
+    border: none;
+    margin: 45px auto 0;
+    background-color: #ECFDF5;
+    color: #065F46;
+    font-size: 32px;
+    border-radius: 4px;
+}
+
+/* Remove scroll numbers on inputs */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number]{
+    -moz-appearance: textfield;
+}

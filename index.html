@@ -1,0 +1,132 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Smythe&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+        <header>
+            <p id="diner-font">Jimmy's Diner</p>
+            <p id="burger-font">The best burgers and pizzas in town.</p>
+        </header>
+        <main>
+            
+            <div class="order-options" id="order-options"> 
+            <!-- orders go into order-options -->
+                
+                <!-- <div class="outside-food-container">
+                    <div class="food-container">
+                        <div class="icon-container">
+                            <i class="food-icon">🍕</i>
+                        </div>
+                        <div>
+                            <p class="food-name">Pizza</p>
+                            <p class="food-ingredients">pepperoni, mushroom, mozarella</p>
+                            <p class="food-price">$14</p>
+                        </div>
+                        <button class="add-btn">+</button>
+                    </div>
+                    <hr>
+                </div>
+                
+                <div class="outside-food-container">
+                    <div class="food-container">
+                        <div class="icon-container">
+                            <i class="food-icon">🍔</i>
+                        </div>
+                        <div>
+                            <p class="food-name">Hamburger</p>
+                            <p class="food-ingredients">beef, cheese, lettuce</p>
+                            <p class="food-price">$12</p>
+                        </div>
+                        <button class="add-btn">+</button>
+                    </div>
+                    <hr>
+                </div>
+                
+                <div class="outside-food-container">
+                    <div class="food-container">
+                        <div class="icon-container">
+                            <i class="food-icon">🍺</i>
+                        </div>
+                        <div>
+                            <p class="food-name">Beer</p>
+                            <p class="food-ingredients">grain, hops, yeast, water</p>
+                            <p class="food-price">$12</p>
+                        </div>
+                        <button class="add-btn">+</button>
+                    </div>
+                    <hr>
+                </div> -->
+            
+            </div>
+            
+            
+            <div class="outside-food-container bottom-food-container" id="bottom-container-margin">
+                <div class="order-container" id="order-container">
+                    
+                    <!-- <div class="thanks-box" id="thanks-box">
+                        <p class="thanks-text" id="thanks-text">Thanks James! Your order is on its way!</p>
+                    </div> -->
+                    
+                    <!-- <div>
+                        <p class="order-title">Your order</p>
+                    </div>
+                    
+                    <div class="selected-items" id="selected-items"> -->
+                    <!-- selected items go here -->
+                    
+                        <!-- <div class="food-order">
+                            <p class="food-order-name">Pizza</p>
+                            <button class="remove-btn">remove</button>
+                            <p class="food-order-price">$14</p>
+                        </div>
+                        
+                        <div class="food-order">
+                            <p class="food-order-name">Beer</p>
+                            <button class="remove-btn">remove</button>
+                            <p class="food-order-price">$12</p>
+                        </div>
+                        
+                        <div class="food-order">
+                            <p class="food-order-name">Hamburger</p>
+                            <button class="remove-btn">remove</button>
+                            <p class="food-order-price">$12</p>
+                        </div>
+                        
+                    </div>
+                    
+                    <hr id="order-hr">
+                    <div class="total-price">
+                        <p class="food-order-name" id="total-sum">Total price:</p>
+                        <p class="food-order-price" id="added-price">$38</p>
+                    </div>
+                        <button class="complete-order-btn">Complete order</button>
+                    </div> -->
+                    
+                </div>
+            </div>
+            
+             <div class="modal-container" id="modal-container">
+                <div class="modal-backdrop" id="modal-backdrop"></div>
+                <div class="modal" id="modal">
+                    <button class="modal-close-btn" id="modal-close-btn">X</button>
+                    <h2 class="modal-text" id="modal-text">Enter card details</h2>
+                    <form class="pay-form" id="pay-form">
+                        <input type="text" name="fullName" placeholder="Enter your name" required>
+                        <input type="number" name="cardNum" placeholder="Enter card number" required>
+                        <input type="number" name="cvvNum" placeholder="Enter CVV" required>
+                        <button type="submit" class="pay-btn" id="pay-btn">Pay</button>
+                    </form>
+                </div>
+             </div>
+             
+        </main>
+        </div>
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
+
+
